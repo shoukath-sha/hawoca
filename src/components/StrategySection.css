@@ -1,0 +1,179 @@
+/* .strategy {
+    width: 100vw; 
+    height: 80vh; 
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    margin: 0; 
+    overflow: hidden; 
+  } */
+
+  .strategy {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    /* margin: 50px 0;  */
+    overflow: hidden; 
+  }
+  
+  
+  .content-wrapper {
+    width: 100%;  /* Use full width */
+    max-width: 1600px;  /* Prevent it from being too wide */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;  /* Add some padding to prevent touching edges */
+  }
+  
+  .strategy-content {
+    max-width: 600px;
+  }
+  
+  .strategy-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .strategy-content p {
+    font-size: 23px;
+    line-height: 1.5;
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+  
+  .branding-categories {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .branding-categories span {
+    position: relative;
+    font-size: 16px;
+  }
+  
+  .branding-categories span::before {
+    content: "|";
+    color: yellow;
+    position: absolute;
+    left: -10px;
+  }
+  
+  .branding-categories span:first-child::before {
+    content: "";
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: rgb(7, 251, 80);
+    color: black;
+  }
+  
+  .strategy-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .strategy-image img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .second1 img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  /* Make sure it stays full width on smaller screens */
+  @media (max-width: 1024px) {
+    .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+    }
+  
+    .strategy-image {
+      justify-content: center;
+    }
+  
+    .strategy-image img {
+      width: 80%;
+      margin-top: 30px;
+    }
+  }
+  
+
+  
+
+  .strategy-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .main-object {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Small Bowl Image Styling */
+  .bowl-image {
+    position: absolute;
+    top: -30px; /* Move it upwards */
+    right: 80px; /* Adjust based on positioning */
+    width: 100px; /* Adjust size */
+    max-width: 100%;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  /* Floating Effect for a Smooth Look */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .bowl-image {
+      right: 50px;
+      width: 80px;
+    }
+  }
+  
+
